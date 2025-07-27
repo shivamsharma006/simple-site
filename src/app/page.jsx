@@ -40,10 +40,9 @@ export default function Home() {
     <div className="min-h-screen bg-black relative overflow-hidden font-cute">
       <BackgroundAnimation />
 
+    
       {/* For background song */}
-      {/* {showMusicControl && (
-        <MusicPlayer musicPlaying={musicPlaying} />
-      )} */}
+      {showMusicControl && <MusicPlayer musicPlaying={musicPlaying} />}
 
       <AnimatePresence mode="wait">
         {currentScreen === 0 && (
